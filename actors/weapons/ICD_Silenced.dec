@@ -7,6 +7,7 @@ ACTOR ICD_Silenced : BaseWeapon
 	Weapon.AmmoGive2 6
 	Weapon.AmmoType2 "ICD_Bullets"
 	Obituary "$OB_MPPISTOL"
+	+WEAPON.NOALERT
 	Inventory.Pickupmessage "$PICKUP_PISTOL_DROPPED"
 	Tag ".45 Pistol"
 	+WEAPON.NOALERT
