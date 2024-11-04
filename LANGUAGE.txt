@@ -32,6 +32,7 @@ GotRocket="You got the hand grenade!";
 GotFlakPack="You got the shotgun upgrade kit!";
 Got40mm="You got the 40mm Grenade launcher!";
 GotSawedOff="You got the Sawed-off shotgun!";
+GotFlares="Flares for when you... wait why the fuck do we need flares for???"
 GotSatchel="You got the Satchel charge!";
 GotBFG="Picked up 5 frag grenades!";
 GotKnife="Picked up the knife!";
