@@ -85,7 +85,7 @@ ACTOR ICD_MinigunPickup : CustomInventory replaces RocketLauncher
 	}
 }
 
-Actor ICD_RevolverPickup : CustomInventory
+Actor ICD_RevolverPickup : CustomInventory replaces BlurSphere
 {
 	Radius 20
 	Height 16
@@ -119,6 +119,25 @@ ACTOR ICD_DualiesPickup : CustomInventory replaces GreenArmor
 		Pickup:
 			TNT1 A 0 A_GiveInventory("ICD_DualPistol", 1)
 			TNT1 A 0 A_GiveInventory("ICD_Bullets", 8)
+			Stop
+	}
+}
+
+ACTOR ICD_DoubleBarrelPickup : CustomInventory replaces SuperShotgun 
+{
+	Radius 20
+	Height 16
+	Scale 0.65
+	Inventory.PickupMessage "$GotMagnum"
+	Inventory.PickupSound "icd/min"
+	States
+	{
+		Spawn:
+			SGN2 A -1
+			Stop
+		Pickup:
+			TNT1 A 0 A_GiveInventory("ICD_DoubleBarrel", 1)
+			TNT1 A 0 A_GiveInventory("ICD_Shells", 12)
 			Stop
 	}
 }
